@@ -1,9 +1,34 @@
-/* body {
-    background-color: rgb(245, 237, 208);
-  }
+:root {
+    
+}
 
-  header {
-    color: rgb(9, 90, 203);
-    background-color: brown;
-  } */
+body {
+    background-color: #1e1e1e;
+}
 
+.header-main {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo {
+    width: 120px;
+    height: 100%;
+    background-color: yellow;
+    
+}
+
+.header-main-nav {
+    width: 120px;
+    height: 100%;
+    background-color: blue;
+}
+
+.header-main-contact {
+    width: 120px;
+    height: 100%;
+    background-color:  red;
+}
