@@ -1,9 +1,9 @@
 /* custom properties */
 :root {
-  --styleblack: #000000;
-  --white: #ffffff;
-  --menublue: #0050C2;
-  --textgray: gray;
+  --p-tekst-color: #000000;
+  --background-color: #ffffff;
+  --Sub-title: #0050C2;
+  --unimportant-text: gray;
 }
 
 * {
@@ -33,6 +33,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  
 }
 
 .header ul {
@@ -56,6 +57,8 @@ a {
 }
 
 .header .logo {
+  width: 100px;
+  height: 100%;
   display: block;
   float: left;
   font-size: 2em;
@@ -64,7 +67,7 @@ a {
 }
 
 .logo img {
-  width: 7vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -81,7 +84,7 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  display: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -186,6 +189,10 @@ a {
   border: none;
   cursor: pointer;
   
+}
+
+.h2-subtitle {
+  color: var(--Sub-title);
 }
 
 footer {
