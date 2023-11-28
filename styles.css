@@ -13,10 +13,10 @@
 }
 
 body {
-  margin: 0;
+  margin: 1em;
   padding: 0;
   height: 100vh;
-  background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg);
+  /* background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg); */
   background-size: cover;
   background-position: center;
 }
@@ -162,6 +162,22 @@ a {
   .header .menu-icon {
     display: none;
   }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.image-container img {
+  max-width: 48%; /* Adjust the width as needed */
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .hero {
