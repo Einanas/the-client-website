@@ -13,14 +13,16 @@
 }
 
 body {
-  margin: 1em;
+  margin: 0;
   padding: 0;
   height: 100vh;
-  /* background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg); */
-  background-size: cover;
-  background-position: center;
+  background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg);
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  font-family: 'Arial', sans-serif; /* Choose a suitable font for text content */
+  color: #ffffff; /* Set text color to white, adjust as needed */
 }
-
 a {
   color: #000;
 }
@@ -67,7 +69,7 @@ a {
 }
 
 .logo img {
-  width: 20vw;
+  width: 10vw;
   height: auto;
 }
 
@@ -190,12 +192,14 @@ a {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
+  margin-right: 12px;
 }
 
 .hero p {
   font-size: 1.5rem;
+  margin-top: 72px;
 }
 
 .hero button {
