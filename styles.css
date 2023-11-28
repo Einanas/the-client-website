@@ -17,25 +17,24 @@ body {
   padding: 0;
   height: 100vh;
   background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg);
-  background-size: cover; /* Ensures the background image covers the entire viewport */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
-  font-family: 'Arial', sans-serif; /* Choose a suitable font for text content */
-  color: #ffffff; /* Set text color to white, adjust as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
 }
+
 a {
   color: #000;
 }
 
 /* header */
-
 .header {
   background-color: #ffffff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
-  
 }
 
 .header ul {
@@ -74,15 +73,13 @@ a {
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -97,7 +94,7 @@ a {
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
@@ -108,7 +105,7 @@ a {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -121,7 +118,6 @@ a {
 }
 
 /* menu btn */
-
 .header .menu-btn {
   display: none;
 }
@@ -148,7 +144,6 @@ a {
 }
 
 /* 48em = 768px */
-
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -173,8 +168,15 @@ a {
 }
 
 .image-container img {
-  max-width: 48%; /* Adjust the width as needed */
+  max-width: 48%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
 }
 
 .text-container {
@@ -208,13 +210,71 @@ a {
   color: white;
   border: none;
   cursor: pointer;
-  
 }
 
 .h2-subtitle {
   color: var(--Sub-title);
 }
 
+.awesome-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.awesome-article .image-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.awesome-article .image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.awesome-article .image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.awesome-article .content {
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+}
+
+.awesome-article h2 {
+  color: var(--Sub-title);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.awesome-article p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.awesome-article .explore-btn {
+  padding: 10px 20px;
+  background-color: var(--Sub-title);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.awesome-article .explore-btn:hover {
+  background-color: #004080;
+}
+
+/* footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -237,10 +297,10 @@ footer a {
 
 @media (max-width: 768px) {
   footer {
-      padding: 10px;
+    padding: 10px;
   }
 
   footer p {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
